@@ -1,0 +1,13 @@
+
+.gallery{
+	.images{
+		.image{
+			img{min-height:100%}
+
+			@media #{$pc}{
+				max-height:220px;overflow:hidden;cursor:pointer;
+				 
+			} 
+		}
+	}
+}

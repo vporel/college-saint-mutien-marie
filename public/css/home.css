@@ -1,0 +1,35 @@
+#slide {
+  height: 500px;
+  position: relative;
+}
+#slide #images {
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+#slide img {
+  width: 100%;
+}
+@media screen and (max-width:768px) {
+  #slide img {
+    width: 150%;
+    margin-left: -20%;
+  }
+}
+#slide #over-slide {
+  color: white;
+  position: absolute;
+  top: 50px;
+  background: rgba(20, 20, 60, 0.3);
+  padding: 15px;
+}
+#slide #over-slide p {
+  font-style: italic;
+}
+#slide #over-slide a {
+  padding: 7px 15px;
+  background: #f08200;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=home.css.map */

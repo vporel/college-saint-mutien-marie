@@ -1,0 +1,101 @@
+header nav {
+  background: #14143c;
+  padding-bottom: 10px !important;
+  color: white;
+}
+@media screen and (min-width:768px) {
+  header nav {
+    position: relative;
+  }
+}
+header .navbar-brand {
+  color: white;
+}
+header #nav-content {
+  font-size: 1.1em;
+  background: #14143c;
+}
+@media screen and (max-width:768px) {
+  header #nav-content {
+    position: absolute;
+    top: 100%;
+    z-index: 3;
+    width: 100%;
+  }
+}
+header ul li {
+  border-bottom: 5px solid transparent;
+  cursor: pointer;
+  position: relative;
+}
+header ul li:hover {
+  border-bottom-color: #8a4b00;
+}
+header ul li.active {
+  border-bottom-color: #f08200;
+  color: #f08200;
+}
+@media screen and (min-width:768px) {
+  header ul li:hover > ul {
+    display: flex;
+  }
+}
+header ul a {
+  display: block;
+  padding: 10px 5px;
+}
+header ul.first-level > li {
+  padding: 5px 20px;
+}
+header ul.second-level, header ul.third-level {
+  display: none;
+  left: 0 !important;
+  background: #14143c;
+  top: 108%;
+  position: absolute;
+  z-index: 5;
+  border-top: 1px solid #8a4b00;
+}
+header ul.second-level > li, header ul.third-level > li {
+  padding: 3px 10px;
+  color: white;
+}
+header .header-contact > * {
+  display: inline-block;
+  vertical-align: top;
+}
+header .header-contact > img {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+header .header-contact address img {
+  margin: 2px 4px;
+}
+header .header-contact address i {
+  color: gray;
+}
+
+.gallery .images .image img {
+  min-height: 100%;
+}
+@media screen and (min-width:768px) {
+  .gallery .images .image {
+    max-height: 220px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=site-template.css.map */
