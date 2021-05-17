@@ -1,6 +1,6 @@
 
-.gallery{
-	.images{
+#gallery{
+	#images{
 		.image{
 			img{min-height:100%}
 
@@ -8,6 +8,20 @@
 				max-height:220px;overflow:hidden;cursor:pointer;
 				 
 			} 
+		}
+	}
+	#images{
+		overflow:auto;
+	}
+	#displaying{
+		position:relative;
+		overflow:hidden;
+		#displaying-controls{
+			position:absolute;top:0;width:100%;left:12px;padding:10px;
+			>div{
+				padding:5px;
+			}
+			i.fa{margin-right:5px;}
 		}
 	}
 }

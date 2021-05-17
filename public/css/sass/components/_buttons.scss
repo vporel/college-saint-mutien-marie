@@ -1,0 +1,27 @@
+.btn{}
+
+
+.btn-primary {
+  background-color: darken($color-primary, 5%);
+  border-color: darken($color-primary, 5%);
+}
+
+.btn-primary:hover,.btn-primary:focus, .btn-primary.focus {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  box-shadow: 0 0 0 0.2rem darken($color-primary, 5%);
+}
+
+
+.btn-secondary {
+  color: #fff;
+  background-color: $color-second;
+  border-color: $color-second;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus {
+  background-color: lighten($color-second, 5%);
+  border-color: lighten($color-second, 5%);
+  box-shadow: 0 0 0 0.2rem $color-second;
+}
+ 

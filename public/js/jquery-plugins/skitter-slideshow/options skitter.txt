@@ -1,0 +1,345 @@
+All the options
+
+view source
+001
+$('.box_skitter_large').skitter({
+002
+ 
+003
+  // <a href="https://www.jqueryscript.net/animation/">Animation</a> velocity
+004
+  velocity: 1,
+005
+ 
+006
+  // Interval between transitions
+007
+  interval: 2500,
+008
+ 
+009
+  // Default animation
+010
+  animation:'',
+011
+ 
+012
+  // Numbers display
+013
+  numbers:false,
+014
+ 
+015
+  // Navigation display
+016
+  navigation:false,
+017
+ 
+018
+  // Label display
+019
+  label:true,
+020
+ 
+021
+  // Easing default
+022
+  easing_default:'',
+023
+ 
+024
+  // The skitters box (internal)
+025
+  skitter_box:null,
+026
+ 
+027
+  // @deprecated
+028
+  time_interval:null,
+029
+ 
+030
+  // Image link (internal)
+031
+  images_links:null,
+032
+ 
+033
+  // Actual image (internal)
+034
+  image_atual:null,
+035
+ 
+036
+  // Actual link (internal)
+037
+  link_atual:null,
+038
+ 
+039
+  // Actual label (internal)
+040
+  label_atual:null,
+041
+ 
+042
+  // Actual target (internal)
+043
+  target_atual:'_self',
+044
+ 
+045
+  // Skitter width (internal)
+046
+  width_skitter:null,
+047
+ 
+048
+  // Skitter height (internal)
+049
+  height_skitter:null,
+050
+ 
+051
+  // Image number loop (internal)
+052
+  image_i: 1,
+053
+ 
+054
+  // Is animating (internal)
+055
+  is_animating:false,
+056
+ 
+057
+  // Is hover skitter_box (internal)
+058
+  is_hover_skitter_box:false,
+059
+ 
+060
+  // Smart randomly (internal)
+061
+  random_ia:null,
+062
+ 
+063
+  // Randomly sliders
+064
+  show_randomly:false,
+065
+ 
+066
+  // Navigation with thumbs
+067
+  thumbs:false,
+068
+ 
+069
+  // Hide numbers and navigation
+070
+  hide_tools:false,
+071
+ 
+072
+  // Fullscreen mode
+073
+  fullscreen:false,
+074
+ 
+075
+  // Loading data from XML file
+076
+  xml:false,
+077
+ 
+078
+  // Navigation with dots
+079
+  dots:true,
+080
+ 
+081
+  // Final opacity of elements in hide_tools
+082
+  opacity_elements: 0.75,
+083
+ 
+084
+  // Interval animation hover elements hide_tools
+085
+  interval_in_elements: 200,
+086
+ 
+087
+  // Interval animation out elements hide_tools
+088
+  interval_out_elements: 300,
+089
+ 
+090
+  // Onload Callback
+091
+  onLoad:null,
+092
+ 
+093
+  // Function call to change image
+094
+  imageSwitched:null,
+095
+ 
+096
+  // @deprecated
+097
+  max_number_height: 20,
+098
+ 
+099
+  // Alignment of numbers/dots/thumbs
+100
+  numbers_align:'center',
+101
+ 
+102
+  // Preview with dots
+103
+  preview:false,
+104
+ 
+105
+  // Focus slideshow
+106
+  focus:false,
+107
+ 
+108
+  // Focus active (internal)
+109
+  foucs_active:false,
+110
+ 
+111
+  // Option play/pause manually
+112
+  controls:false,
+113
+ 
+114
+  // Displays progress bar
+115
+  progressbar:false,
+116
+ 
+117
+  // CSS progress bar
+118
+  progressbar_css: {},
+119
+ 
+120
+  // Is paused (internal)
+121
+  is_paused:false,
+122
+ 
+123
+  // Is blur (internal)
+124
+  is_blur:false,
+125
+ 
+126
+  // Is paused time (internal)
+127
+  is_paused_time:false,
+128
+ 
+129
+  // Time start (internal)
+130
+  time_start: 0,
+131
+ 
+132
+  // Elapsed time (internal)
+133
+  elapsedTime: 0,
+134
+ 
+135
+  // Stop animation to move mouse over it.
+136
+  stop_over:true,
+137
+ 
+138
+  // Enable navigation keys
+139
+  enable_navigation_keys:false,
+140
+ 
+141
+  // Specific animations
+142
+  with_animations: [],
+143
+ 
+144
+  // Function call to go over the navigation buttons
+145
+  // mouseOverButton: function() { $(this).stop().animate({opacity:0.5}, 200); },
+146
+  mouseOverButton:null,
+147
+ 
+148
+  // Function call to go out the navigation buttons
+149
+  // mouseOutButton: function() { $(this).stop().animate({opacity:1}, 200); },
+150
+  mouseOutButton:null,
+151
+ 
+152
+  // Sets whether the slideshow will start automatically
+153
+  auto_play:true,
+154
+ 
+155
+  // Label animation type
+156
+  label_animation:'slideUp',
+157
+ 
+158
+  // Theme
+159
+  theme:null,
+160
+ 
+161
+  responsive: {
+162
+    small: {
+163
+      animation:'fade',
+164
+      max_width: 768
+165
+    },
+166
+    medium: {
+167
+      max_width: 1024
+168
+    }
+169
+  }
+170
+ 
+171
+});

@@ -2,6 +2,7 @@
 	<div class="row">
 		<div class="col-12 col-md-6" id="site-name">
 			<h3 class="d-none d-md-block">College Saint <br>Mutien Marie</h3>
+			<a href="index.php"class="d-md-none h3">College Saint Mutien Marie</a>
 		</div>
 		<div class="d-none d-md-block col-md-3 header-contact">
 			<img src="public/icons/png/pin.png"alt=""height="30">
@@ -21,10 +22,7 @@
 
 			</address>
 		</div>
- 		<nav class="col-12 p-0 navbar navbar-expand-sm nav-dark">
-			<a href="index.php"class="d-md-none navbar-brand h3">College Saint Mutien Marie</a>
- 			<button class="navbar-toggler"data-target="#nav-content"data-toggle="collapse"><img src="public/icons/png/menu.png"height="40"/></button>
- 			<div id="nav-content" class="collapse navbar-collapse">
+ 		<nav class="col-12 p-0 navbar navbar-expand nav-dark">
  			<ul class="navbar-nav first-level pl-2 pl-md-5">
  			<?php foreach ($nav_links as $en_text=>$link) { ?>
 	 			<li class="nav-item <?php if($en_text == $page) echo 'active'; ?>">
@@ -50,7 +48,6 @@
 				</li>
  			<?php } ?>
  			</ul>
- 			</div>
  		</nav>
  		<div class="col-12"id="site-nav-position">
  			<h4 class="p-1">

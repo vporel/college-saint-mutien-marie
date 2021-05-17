@@ -6,6 +6,10 @@
 	<link rel="shortcut icon" href="public/images/"/>
 	<title>College - <?= $title ?></title>
 	<link rel="stylesheet" type="text/css" href="public/css/bootstrap/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="public/css/fontawesome/css/fontawesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="public/css/fontawesome/css/brands.min.css"/>
+	<link rel="stylesheet" type="text/css" href="public/css/fontawesome/css/solid.min.css"/>
+	<link rel="stylesheet" type="text/css" href="public/css/fontawesome/css/regular.min.css"/>
 	<link rel="stylesheet" type="text/css" href="public/css/site-template.css"/>
 	<?php
 		if(isset($styles))
@@ -23,6 +27,7 @@
 	<!-- Scripts -->
 	<script language="javascript"src="public/js/jquery.js"></script>
 	<script language="javascript"src="public/css/bootstrap/bootstrap.min.js"></script>
+	<script language="javascript"src="public/css/fontawesome/js/fontawesome.min.js"></script>
 	<script language="javascript"src="public/js/doc-functions.js"></script>
 	<?php
 		if(isset($scripts))

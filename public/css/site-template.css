@@ -75,15 +75,58 @@ header .header-contact address i {
   color: gray;
 }
 
-.gallery .images .image img {
+#gallery #images .image img {
   min-height: 100%;
 }
 @media screen and (min-width:768px) {
-  .gallery .images .image {
+  #gallery #images .image {
     max-height: 220px;
     overflow: hidden;
     cursor: pointer;
   }
+}
+#gallery #images {
+  overflow: auto;
+}
+#gallery #displaying {
+  position: relative;
+  overflow: hidden;
+}
+#gallery #displaying #displaying-controls {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 12px;
+  padding: 10px;
+}
+#gallery #displaying #displaying-controls > div {
+  padding: 5px;
+}
+#gallery #displaying #displaying-controls i.fa {
+  margin-right: 5px;
+}
+
+.btn-primary {
+  background-color: #d77400;
+  border-color: #d77400;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus {
+  background-color: #f08200;
+  border-color: #f08200;
+  box-shadow: 0 0 0 0.2rem #d77400;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #14143c;
+  border-color: #14143c;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus {
+  background-color: #1a1a4f;
+  border-color: #1a1a4f;
+  box-shadow: 0 0 0 0.2rem #14143c;
 }
 
 * {
