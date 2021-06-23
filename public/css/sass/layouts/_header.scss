@@ -1,7 +1,17 @@
 
 header{
+	background-image: url('../../public/images/book.jpg');
+	background-position: 50% 50%;
+	background-color:rgba($color-primary,.7);
+	background-blend-mode: multiply;
+	width:100%;
+
+	#site-name{
+		color:white;
+	}
+
 	nav{
-		background:$color-second;padding-bottom:10px!important;
+		background:$color-second;padding-bottom:10px!important;z-index:1!important;
 		color:white;
 		@media #{$pc}{
 			position:relative;
@@ -11,13 +21,14 @@ header{
 	#nav-content{
 		font-size:1.1em;background:$color-second;
 		@media #{$phone}{
-			position:absolute;top:100%;z-index:3;width:100%;
+			position:absolute;top:100%;width:100%;
 		}
 	}
 	ul{ 
+		li:first-child{margin-left:15%;}
 		li{
 			border-bottom:5px solid transparent; cursor:pointer;
-			position:relative;
+			position:relative;padding:5px 20px;
 
 		 	&:hover{
 		 		border-bottom-color:darken($color-primary, 20%);
@@ -34,30 +45,36 @@ header{
 			display:block;padding:10px 5px;
 		}
 	}
-	ul.first-level{
 
-		>li{
-	 		padding:5px 20px;
+	#header-contact{
+		background:linear-gradient(90deg, transparent, rgba($color-second, .9) 80%);
+		color:white;
+		div>*{display:inline-block;vertical-align: top;}
+
+		div>i{
+			margin-top:20px;margin-right:10px;font-size:2em;
 		}
-	}	
-	ul.second-level, ul.third-level{
-		
-		>li{
-			padding:3px 10px;color:white
-		}
-		display:none;
-		left:0!important;
-		background:$color-second;top:108%;
-		position:absolute;z-index:5;
-		border-top:1px solid darken($color-primary, 20%);
-		
+		address{padding-top:10px;}
+		address i.icon{margin:2px 8px;}
 	}
-	.header-contact{
-		>*{display:inline-block;vertical-align: top;}
-		>img{
-			margin-top:20px;margin-right:10px;
+	#site-nav-position{
+		font-size:1.1em!important;background:white;position:relative!important;
+		height:25px;
+		margin:0;
+		span{display:block;position:absolute;height:100%;width:100%;left:0;top:0;text-indent:10px;}
+		.bg{
+			display:block;
+			height:100%;
+			z-index:0;
+			background:$color-primary;
+			&::after{
+				position:absolute;width:0;height:0;right:0;top:0;
+				content:'';border:25px solid transparent;border-right-color:white;
+				border-bottom:0;
+			}
+			@media #{$pc}{
+				width:30%;
+			}
 		}
-		address img{margin:2px 4px;}
-		address i{color:gray;}
 	}
 }

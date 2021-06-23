@@ -1,6 +1,17 @@
+header {
+  background-image: url("../../public/images/book.jpg");
+  background-position: 50% 50%;
+  background-color: rgba(240, 130, 0, 0.7);
+  background-blend-mode: multiply;
+  width: 100%;
+}
+header #site-name {
+  color: white;
+}
 header nav {
   background: #14143c;
   padding-bottom: 10px !important;
+  z-index: 1 !important;
   color: white;
 }
 @media screen and (min-width:768px) {
@@ -19,14 +30,17 @@ header #nav-content {
   header #nav-content {
     position: absolute;
     top: 100%;
-    z-index: 3;
     width: 100%;
   }
+}
+header ul li:first-child {
+  margin-left: 15%;
 }
 header ul li {
   border-bottom: 5px solid transparent;
   cursor: pointer;
   position: relative;
+  padding: 5px 20px;
 }
 header ul li:hover {
   border-bottom-color: #8a4b00;
@@ -44,66 +58,150 @@ header ul a {
   display: block;
   padding: 10px 5px;
 }
-header ul.first-level > li {
-  padding: 5px 20px;
-}
-header ul.second-level, header ul.third-level {
-  display: none;
-  left: 0 !important;
-  background: #14143c;
-  top: 108%;
-  position: absolute;
-  z-index: 5;
-  border-top: 1px solid #8a4b00;
-}
-header ul.second-level > li, header ul.third-level > li {
-  padding: 3px 10px;
+header #header-contact {
+  background: linear-gradient(90deg, transparent, rgba(20, 20, 60, 0.9) 80%);
   color: white;
 }
-header .header-contact > * {
+header #header-contact div > * {
   display: inline-block;
   vertical-align: top;
 }
-header .header-contact > img {
+header #header-contact div > i {
   margin-top: 20px;
   margin-right: 10px;
+  font-size: 2em;
 }
-header .header-contact address img {
-  margin: 2px 4px;
+header #header-contact address {
+  padding-top: 10px;
 }
-header .header-contact address i {
-  color: gray;
+header #header-contact address i.icon {
+  margin: 2px 8px;
 }
-
-#gallery #images .image img {
-  min-height: 100%;
+header #site-nav-position {
+  font-size: 1.1em !important;
+  background: white;
+  position: relative !important;
+  height: 25px;
+  margin: 0;
+}
+header #site-nav-position span {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-indent: 10px;
+}
+header #site-nav-position .bg {
+  display: block;
+  height: 100%;
+  z-index: 0;
+  background: #f08200;
+}
+header #site-nav-position .bg::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  top: 0;
+  content: "";
+  border: 25px solid transparent;
+  border-right-color: white;
+  border-bottom: 0;
 }
 @media screen and (min-width:768px) {
-  #gallery #images .image {
-    max-height: 220px;
-    overflow: hidden;
-    cursor: pointer;
+  header #site-nav-position .bg {
+    width: 30%;
   }
 }
-#gallery #images {
-  overflow: auto;
+
+aside {
+  padding: 0 !important;
+  margin-bottom: 10px;
 }
-#gallery #displaying {
-  position: relative;
-  overflow: hidden;
-}
-#gallery #displaying #displaying-controls {
-  position: absolute;
-  top: 0;
+aside h3 {
+  background: #0e0e29;
+  color: white;
   width: 100%;
-  left: 12px;
-  padding: 10px;
-}
-#gallery #displaying #displaying-controls > div {
+  margin: 0;
+  font-size: 1.5em;
   padding: 5px;
+  padding-left: 10px;
 }
-#gallery #displaying #displaying-controls i.fa {
-  margin-right: 5px;
+aside > div {
+  width: 100%;
+  margin: 0 !important;
+  padding: 0;
+}
+aside .new {
+  background: #e6e6e6;
+  margin-top: 5px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+aside .new h4 {
+  font-size: 1.3em;
+  border-bottom: 2px solid #14143c;
+  margin: 0;
+  width: 100%;
+  padding: 3px;
+  color: #14143c;
+}
+aside .new i {
+  display: block;
+  text-align: right;
+  width: 100%;
+  color: #f08200;
+}
+aside .new:hover {
+  background: whitesmoke;
+}
+
+footer {
+  background: #14143c;
+  width: 100% !important;
+  overflow: hidden;
+  color: #f0f0f0;
+  padding: 10px !important;
+}
+footer form * {
+  display: block;
+}
+footer form p {
+  font-weight: bold;
+}
+footer form label {
+  margin: 5px 0;
+}
+footer form input {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+footer form button {
+  margin-left: 25% !important;
+  margin-top: 10px;
+  width: 50%;
+}
+footer #footer-contact {
+  text-align: center;
+  margin-top: 30px;
+}
+footer #footer-contact i {
+  margin: 5px;
+  font-size: 20px;
+}
+footer #footer-contact h5 {
+  margin: 5px 0;
+}
+footer #localisation {
+  width: 70%;
+  height: 200px;
+  background: white;
+  border: 2px solid black;
 }
 
 .btn-primary {
@@ -114,7 +212,7 @@ header .header-contact address i {
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus {
   background-color: #f08200;
   border-color: #f08200;
-  box-shadow: 0 0 0 0.2rem #d77400;
+  box-shadow: 0 0 0 0.1rem #d77400;
 }
 
 .btn-secondary {
@@ -125,12 +223,28 @@ header .header-contact address i {
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus {
   background-color: #1a1a4f;
-  border-color: #1a1a4f;
-  box-shadow: 0 0 0 0.2rem #14143c;
+  border-color: #212162;
+  box-shadow: 0 0 0 0.1rem #14143c;
 }
 
 * {
   transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+#page {
+  width: 85%;
+  margin: auto;
+}
+@media screen and (max-width:768px) {
+  #page {
+    width: 100%;
+  }
 }
 
 a {
@@ -139,6 +253,25 @@ a {
 }
 a:hover {
   text-decoration: none;
+}
+a.blue-link {
+  color: blue;
+}
+a.blue-link:hover {
+  text-decoration: underline;
+}
+
+.c-primary {
+  color: #f08200 !important;
+}
+
+.c-second {
+  color: #14143c !important;
+}
+
+.fa, .fas, .far, .fab, .fal {
+  margin-right: 4px;
+  margin-left: 4px;
 }
 
 /*# sourceMappingURL=site-template.css.map */

@@ -1,0 +1,25 @@
+aside{
+	padding:0!important;margin-bottom:10px;
+	h3{
+		background:darken($color-second, 5%);color:white;
+		width:100%;margin:0;font-size:1.5em;
+		padding:5px;padding-left:10px;
+	}
+	>div{width:100%;margin:0!important;padding:0;}
+	.new{
+		background:rgb(230,230,230);margin-top:5px;
+		transition:background .3s ease;
+		cursor:pointer;
+		h4{
+			font-size:1.3em;border-bottom:2px solid $color-second;
+			margin:0;width:100%;padding:3px; color:$color-second;
+		}
+		i{
+			display:block;text-align:right;width:100%;
+			color:$color-primary;
+		}
+		&:hover{
+			background:rgb(245,245,245);
+		}
+	}
+}

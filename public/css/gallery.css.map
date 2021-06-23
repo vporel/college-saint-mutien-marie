@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["sass/gallery.scss","sass/utils/_variables.scss"],"names":[],"mappings":"AAMC;EACC;EAAY;;AAEb;EAAM;EAAU;EAAY;EAAY;EAAsC;;;AAE/E;EACC;;AACA;EACC;EACA;EACA,OCPY;;ADQZ;EACC;;AAED;EAAO;EAAuB;;AAC9B;EAAO,OClBD;;ADsBL;EACC;EACA;;AACA;EACC;;AAGF;EARD;IASE;IAAa;IAAgB;;EAC7B;IAAI;;;AAEL;EACC;IAAI","file":"gallery.css"}

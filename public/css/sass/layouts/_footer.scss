@@ -1,0 +1,39 @@
+footer{
+    background:$color-second;
+    width:100%!important;overflow:hidden;
+    color:rgb(240,240,240);
+        padding:10px!important;
+    
+
+    form{
+        
+        *{
+            display:block;
+        }
+        p{font-weight:bold}
+        label{
+            margin:5px 0;
+        }
+        input{
+            width:100%;background:none;
+            border:none;
+            border-bottom:2px solid white;
+            color:white;
+        }
+        button{
+            margin-left:25%!important;
+            margin-top:10px;
+            width:50%;
+        }
+    }
+    #footer-contact{
+        text-align:center;margin-top:30px;
+        i{margin:5px;font-size:20px;}
+        h5{
+            margin:5px 0;
+        }
+    }
+    #localisation{
+        width:70%;height:200px;background:white;border:2px solid black;
+    }
+}

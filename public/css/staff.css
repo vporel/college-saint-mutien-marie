@@ -1,0 +1,22 @@
+h3.staff-section-opener {
+  border-bottom: 1px solid gray;
+  width: 95%;
+  cursor: pointer;
+}
+
+.teacher {
+  margin: 3px auto;
+}
+.teacher img {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+.teacher h4 {
+  color: gray;
+}
+.teacher:nth-child(2n) {
+  background: #f0f0f0;
+}
+
+/*# sourceMappingURL=staff.css.map */

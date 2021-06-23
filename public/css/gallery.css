@@ -1,0 +1,54 @@
+#search-event span {
+  padding: 5px;
+  border-radius: 10px;
+}
+#search-event input {
+  width: 80%;
+  border: none;
+  padding: 3px;
+  border-bottom: 2px solid #14143c;
+  color: #14143c;
+}
+
+#gallery {
+  margin: 10px 0;
+}
+#gallery h3 {
+  margin: 5px 0;
+  background: linear-gradient(90deg, white 98%, #14143c 2%);
+  color: #14143c;
+}
+#gallery h3:hover {
+  background: linear-gradient(90deg, white 98%, #f08200 2%);
+}
+#gallery h3 i.date {
+  color: #c8c8c8;
+  font-size: 0.7em;
+}
+#gallery h3 i.icon {
+  color: #f08200;
+}
+#gallery .images .image img {
+  filter: grayscale(0.8);
+  transition: all 0.2s ease;
+}
+#gallery .images .image img:hover {
+  filter: grayscale(0);
+}
+@media screen and (min-width:768px) {
+  #gallery .images .image {
+    height: 220px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #gallery .images .image img {
+    height: 100%;
+  }
+}
+@media screen and (max-width:768px) {
+  #gallery .images .image img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=gallery.css.map */

@@ -1,0 +1,14 @@
+@import "./utils/variables";
+
+.class{
+	width:100%;border-bottom:1px solid gray;
+	h5{color:gray;}
+	.matieres{
+		color:white;
+		a{
+			padding:5px;margin:3px;background:rgba($color-second, .8);
+			text-align:center;
+			&:hover{color:white;}
+		}
+	}
+}

@@ -1,5 +1,5 @@
 #slide {
-  height: 500px;
+  height: 350px;
   position: relative;
 }
 #slide #images {
@@ -23,6 +23,11 @@
   background: rgba(20, 20, 60, 0.3);
   padding: 15px;
 }
+@media screen and (max-width:768px) {
+  #slide #over-slide {
+    margin-top: -30px;
+  }
+}
 #slide #over-slide p {
   font-style: italic;
 }
@@ -30,6 +35,51 @@
   padding: 7px 15px;
   background: #f08200;
   border-radius: 20px;
+}
+
+#page-middle {
+  margin-top: 5px;
+}
+@media screen and (max-width:768px) {
+  #page-middle {
+    margin-top: -180px;
+  }
+}
+
+article {
+  padding: 0 !important;
+  padding-left: 20px !important;
+}
+article > div {
+  width: 100%;
+  padding: 0 !important;
+}
+article section {
+  padding: 0 !important;
+}
+article section h3 {
+  color: #14143c;
+  border-bottom: 2px solid #14143c;
+  width: 100%;
+  margin: 0;
+  font-size: 1.5em;
+  padding: 5px;
+  padding-left: 10px;
+}
+article section p {
+  padding: 10px;
+  padding-bottom: 0px;
+}
+article section a {
+  color: blue;
+}
+article section a:hover {
+  text-decoration: underline;
+}
+article section > strong {
+  display: block;
+  text-align: right;
+  width: 100%;
 }
 
 /*# sourceMappingURL=home.css.map */

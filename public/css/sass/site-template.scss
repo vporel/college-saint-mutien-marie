@@ -1,13 +1,35 @@
 @import "./utils/variables";
 @import "./layouts/header";
-@import "./layouts/gallery";
+@import "./layouts/aside";
+@import "./layouts/footer";
 @import "./components/buttons";
 
 *{
 	transition:all .3s ease;
 }
 
+body{
+	margin:0;padding:0;
+	background:lighten($color-primary, 90%);
+}
+#page{
+	width:$doc-width;margin:auto;
+	@media #{$phone}{
+		width:100%;
+	}
+}
+
 a{
 	text-decoration:none;color:inherit;
 	&:hover{text-decoration:none};
+	&.blue-link{
+		color:blue;
+		&:hover{text-decoration:underline;}
+	}
 }
+
+
+.c-primary{color:$color-primary!important;}
+.c-second{color:$color-second!important;}
+
+.fa, .fas, .far, .fab, .fal{margin-right:4px;margin-left:4px;}

@@ -1,62 +1,50 @@
 <header class="container-fluid">
 	<div class="row">
-		<div class="col-12 col-md-6" id="site-name">
+		<div class="col-12 col-md-5 offset-md-1" id="site-name">
 			<h3 class="d-none d-md-block">College Saint <br>Mutien Marie</h3>
 			<a href="index.php"class="d-md-none h3">College Saint Mutien Marie</a>
 		</div>
-		<div class="d-none d-md-block col-md-3 header-contact">
-			<img src="public/icons/png/pin.png"alt=""height="30">
-			<address>
-				<strong>Position</strong><br>
-				<i>Yaoundé, Rue xxxxxxx</i>
-			</address>
-		</div>
-		<div class="d-none d-md-block col-md-3 header-contact">
-			<img src="public/icons/png/phone.png"alt=""height="30">
-			<address>
-				<strong>Call</strong><br>
-				<i>6-XX-XX-XX-XX</i><br>
-				<a href="#"><img src="public/icons/png/facebook.png"alt=""height="20"></a>
-				<a href="#"><img src="public/icons/png/twitter.png"alt=""height="20"></a>
-				<a href="#"><img src="public/icons/png/email.png"alt=""height="20"></a>
+		<div class="col-6 d-none d-md-block">
+			<div id="header-contact" class="row">
+				<div class=" col-md-6" >
+					<i class="fas fa-map-marker-alt"></i>
+					<address>
+						<i>Yaoundé, Rue xxxxxxx</i>
+					</address>
+				</div>
+				<div class="col-md-6">
+					<i class="fas fa-phone-alt"></i>
+					<address>
+						<i>6-XX-XX-XX-XX</i><br>
+						<a href="#"><i class="icon fab fa-facebook"></i></a>
+						<a href="#"><i class="icon fab fa-twitter"></i></a>
+						<a href="#"><i class="icon far fa-envelope"></i></a>
 
-			</address>
+					</address>
+				</div>
+			</div>
 		</div>
- 		<nav class="col-12 p-0 navbar navbar-expand nav-dark">
- 			<ul class="navbar-nav first-level pl-2 pl-md-5">
+ 		<nav class="col-12 p-0 navbar navbar-expand nav-dark sticky-top">
+ 			<ul class="navbar-nav pl-2">
  			<?php foreach ($nav_links as $en_text=>$link) { ?>
 	 			<li class="nav-item <?php if($en_text == $page) echo 'active'; ?>">
  					<a class="" href="index.php?page=<?=$en_text; ?>"><?= ucfirst($link["text"]); ?></a>
- 				<?php if(key_exists("sub-links",$link)){ ?>
- 					<ul class="navbar-nav second-level">
- 					<?php foreach ($link["sub-links"] as $sublink_en_text => $sublink) {?>
-	 					<li class="nav-item">
- 							<a class="" href="index.php?page=<?= $en_text; ?>&amp;part=<?= $sublink_en_text; ?>"><?= ucfirst($sublink["text"]); ?></a>
-		 				<?php if(key_exists("sub-links", $sublink)){ ?>
-		 					<ul class="navbar-nav third-level">
-		 					<?php foreach ($sublink["sub-links"] as $sublink2_en_text => $sublink2) {?>
-			 					<li class="nav-item">
-		 							<a class="" href="index.php?page=<?= $en_text; ?>&amp;part=<?= $sublink_en_text; ?>&amp;part_2=<?= $sublink2_en_text; ?>"><?= ucfirst($sublink2["text"]); ?></a>
-				 				</li>
-		 					<?php } ?>
-		 					</ul>
-		 				<?php } ?>
-		 				</li>
- 					<?php } ?>
- 					</ul>
- 				<?php } ?>
 				</li>
  			<?php } ?>
  			</ul>
  		</nav>
- 		<div class="col-12"id="site-nav-position">
- 			<h4 class="p-1">
- 			<?php
- 				if(isset($part)) echo ucfirst($nav_links[$page]["sub-links"][$part]["text"]);
- 				if(isset($part_2)) echo " > ".ucfirst($nav_links[$page]["sub-links"][$part]["sub-links"][$part_2]["text"]);
- 			?>
- 			</h4>
+ 		
+	<?php if(isset($_GET['page'])){ ?>
+		<h4 class="col-12"id="site-nav-position">
+			<span class="bg"></span>
+			<span>
+				<strong class="c-second">
+					<?= ucfirst($nav_links[$page]["text"]) ?>
+				</strong>
+				<i><?php if(isset($title_message)) echo " - ".$title_message; ?></i>
+			</span>
  		</div>
+	<?php } ?>
  	</div>
 </header>
 <span id="message" style="display:none">
@@ -64,7 +52,7 @@
 		<?php if(isset($message)) echo $message; ?>
 	</em> 
 	<p></p>
-	<img src="public/icons/png/delete.png"alt="Close" class="icon icon-black" onclick="$('#message').fadeOut(250);"/>
+	<img src="icons/png/delete.png"alt="Close" class="icon icon-black" onclick="$('#message').fadeOut(250);"/>
 </span>
  <script language="javascript">
  	

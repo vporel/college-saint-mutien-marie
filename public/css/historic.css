@@ -1,0 +1,11 @@
+#images div * {
+  display: block;
+}
+#images div img {
+  width: 100%;
+}
+#images div i {
+  text-align: center;
+}
+
+/*# sourceMappingURL=historic.css.map */

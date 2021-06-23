@@ -1,0 +1,15 @@
+@import "./utils/variables";
+
+h3.staff-section-opener{
+	border-bottom:1px solid gray;width:95%;cursor:pointer;
+}
+
+.teacher{
+	margin:3px auto;
+	img{width:100%;margin:auto;display: block;}
+	h4{color:gray;}
+	&:nth-child(2n){
+		background:rgb(240, 240, 240);
+	}
+	
+}
